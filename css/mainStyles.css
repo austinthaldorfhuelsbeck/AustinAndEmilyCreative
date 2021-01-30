@@ -28,6 +28,29 @@ h2 {
   line-height: 1.3em;
 }
 
+/* --- NAV MENUS --- */
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.menu-left, .menu-center, .menu-right { position: absolute; }
+
+.menu-left {
+  left: 0;
+  padding-left: 5.625rem;
+}
+
+.menu-right {
+  right: 0;
+  padding-right: 5.625rem;
+}
+
 /* --- INDEX CAROUSEL --- */
 
 .carousel-item {
