@@ -1,31 +1,44 @@
 /* --- PRIMARY FONT STYLING --- */
 
 @font-face {
-  font-family: 'CallunaSansRegular';
-  src: url('../fonts/callunasans_regular_macroman/CallunaSansRegular-webfont.woff2') format('woff2'),
-       url('../fonts/callunasans_regular_macroman/CallunaSansRegular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Messapia-Bold';
+  src: url('../fonts/Messapia/Messapia-Bold.woff2') format('woff2'),
+       url('../fonts/Messapia/Messapia-Bold.woff') format('woff');
 }
 
-h1, h2 {
-  font-family: 'CallunaSansRegular';
-  text-transform: uppercase;
+@font-face {
+  font-family: 'NectoMono-Regular';
+  src: url('../fonts/NectoMono/Necto-Mono.woff2') format('woff2'),
+       url('../fonts/NectoMono/Necto-Mono.woff') format('woff');
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  letter-spacing: .13em;
-  line-height: 1.6em;
+  font-family: Ortica-Light;
+  font-size: 4rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 0.9em;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  text-transform: none;
 }
 
-h2 {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.3rem;
+.nav-link, .carousel-container h2, .dropdown-item {
+  font-family: Messapia-Bold;
+  text-transform: uppercase;
+  font-size: .6rem;
   letter-spacing: .21em;
-  line-height: 1.3em;
+}
+
+.carousel-container p {
+  font-family: NectoMono-Regular;
+  font-size: 0.6875rem;
+  font-weight: regular;
+  font-style: normal;
+  line-height: 1.6em;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* --- NAV MENUS --- */
@@ -81,3 +94,5 @@ h2 {
   padding-bottom: 50px;
   padding-left: 75px;
 }
+
+.carousel-container h2 { font-size: 1rem; }
