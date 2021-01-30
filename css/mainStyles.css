@@ -15,8 +15,8 @@ h1, h2 {
 
 h1 {
   font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: .15em;
+  font-size: 1.6rem;
+  letter-spacing: .13em;
   line-height: 1.6em;
 }
 
@@ -28,8 +28,33 @@ h2 {
   line-height: 1.3em;
 }
 
+/* --- INDEX CAROUSEL --- */
+
 .carousel-item {
   height: 32rem;
-  background: #777;
+  background: #333;
   color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.carousel-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  padding-left: 75px;
 }
