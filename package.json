@@ -1,0 +1,20 @@
+{
+  "name": "AustinAndEmilyCreative",
+  "version": "1.0.0",
+  "description": "This is a redesign, and hopefully an upgrade, of an existing Squarespace site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinthaldorfhuelsbeck/AustinAndEmilyCreative.git"
+  },
+  "keywords": [],
+  "author": "Austin Thaldorf-Huelsbeck <austinthaldorfhuelsbeck@gmail.com> (austinthaldorfhuelsbeck.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/austinthaldorfhuelsbeck/AustinAndEmilyCreative/issues"
+  },
+  "homepage": "https://github.com/austinthaldorfhuelsbeck/AustinAndEmilyCreative#readme"
+}
