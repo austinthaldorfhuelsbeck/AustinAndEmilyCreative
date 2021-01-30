@@ -1,0 +1,26 @@
+.carousel-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 20;
+  color: white;
+}
+
+h1 {
+  font-family: calluna-sans;
+  font-weight: 700;
+  font-size: 29px;
+  letter-spacing: .15em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: calluna-sans;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .21em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
