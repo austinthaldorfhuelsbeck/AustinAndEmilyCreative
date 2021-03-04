@@ -130,6 +130,12 @@ a:hover { color: #995738; }
   justify-content: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
 @media all and (min-width: 768px) {
   .banner-video, .video-box {
     width: 100%;
