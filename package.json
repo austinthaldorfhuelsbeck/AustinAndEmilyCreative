@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/austinthaldorfhuelsbeck/AustinAndEmilyCreative/issues"
   },
-  "homepage": "https://github.com/austinthaldorfhuelsbeck/AustinAndEmilyCreative#readme"
+  "homepage": "https://github.com/austinthaldorfhuelsbeck/AustinAndEmilyCreative#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }

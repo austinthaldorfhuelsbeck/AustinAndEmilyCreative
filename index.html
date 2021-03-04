@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="/css/bootstrap css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/node_modules/aos/dist/aos.css" rel="stylesheet">
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- Styles -->
-    <link href="/css/mainStyles.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
 
     <title>Austin + Emily</title>
 
@@ -19,127 +20,205 @@
 
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse menu-container" id="navbarSupportedContent">
-          <ul class="navbar-nav menu-left mr-auto">
-            <li class="nav-item active pr-3">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-
-          <a class="navbar-brand menu-center" href="/"><img src="img/AElogo-black-transparent.png" width="200px;" /></a>
-
+  
+        <div
+          class="collapse navbar-collapse menu-container"
+          id="navbarSupportedContent"
+        >
+          <a href="/">
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/black%20transparent.png"
+              width="200px;"
+            />
+          </a>
+  
           <ul class="navbar-nav menu-right ml-auto">
-            <li class="nav-item px-3">
-              <a class="nav-link" href="films.html">Films</a>
+            <li class="nav-item px-1">
+              <a href="/" class="nav-link">Home</a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="investment.html">Investment</a>
+            <li class="nav-item px-1">
+              <a href="/about" class="nav-link">About</a>
             </li>
-            <li class="nav-item dropdown pl-3">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                More...
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Planning</a>
-                <a class="dropdown-item" href="#">Blog</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Login</a>
-              </div>
+            <li class="nav-item px-1">
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="/films" class="nav-link">Films</a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="/investment" class="nav-link">Investment</a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="/planning" class="nav-link">Planning</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <!-- INDEX CAROUSEL -->
-      <div id="indexCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="overlay-image" style="background-image: url(./img/index/michelle-dylan-wide.jpg);"></div>
-            <div class="container carousel-container">
-              <h2>Lorem ipsum</h2><br />
-              <h1>Lorem ipsum</h1>
-              <h1>dolor amet.</h1><br />
-              <p>Wedding Videographers | Seattle &amp; beyond</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image" style="background-image: url(./img/index/drone-wide.jpg);"></div>
-            <div class="container carousel-container">
-              <h2>Lorem ipsum</h2><br />
-              <h1>Lorem ipsum</h1>
-              <h1>dolor amet.</h1><br />
-              <p>Wedding Videographers | Seattle &amp; beyond</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image" style="background-image: url(./img/index/kailey-kyle-wide.jpg);"></div>
-            <div class="container carousel-container">
-              <h2>Lorem ipsum</h2><br />
-              <h1>Lorem ipsum</h1>
-              <h1>dolor amet.</h1><br />
-              <p>Wedding Videographers | Seattle &amp; beyond</p>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#indexCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#indexCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+      <!-- VIDEO BANNER -->
+      <div class="video-box">
+        <video
+          class="banner-video"
+          data-height
+          data-width
+          playsinline
+          preload="auto"
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+          src="https://storage.googleapis.com/austin-and-emily-website/reel-bg-vid.mp4"
+          type="video/mp4"
+        ></video>
       </div>
+
     </header>
 
     <!-- INDEX PAGE CONTENT -->
     <main class="container mt-5">
       <!-- Index Header section -->
-      <div class="row my-4" id="index-header">
-        <div class="col col-md-7">
-          <h2>Your wedding is a brief moment in a story that you will work to write forever.</h2>
+      <div class="my-2 align-center">
+        <div class="row my-4">
+          <h3 class="mx-auto my-2">
+            Your wedding is a brief moment in a story that you'll work to write
+            forever.
+          </h3>
+          <h3 class="mx-auto my-2">
+            <em>
+              Your wedding film should capture the full story of your love in all
+              its forms.
+            </em>
+          </h3>
         </div>
-      </div>
-
-      <!-- Index Pitch section -->
-      <div class="row justify-content-end" id="index-pitch">
-        <div class="col col-md-7 text-right">
-          <p>
-            The glint in your partner's eye, the same one you remember noticing when you knew there must be 
-            something more, the gaze that sees all of who you are and cherishes you.
+        <div class="row my-2">
+          <p class="mx-auto my-2">
+            The glint in your partner's eye, the same one you remember noticing
+            when you knew there must be something more, the gaze that sees all of
+            who you are and cherishes you.
           </p>
-          <p>
-            We want to tell the full story, the one you can relive again and again with family and friends.
-            We are committed to our couples and what makes them unique, and we take the time to create 
-            powerful films that move and showcase them and their unique love story.
+          <p class="mx-auto my-2">
+            We want to tell the full story, the one you can relive again and again
+            with family and friends. We are committed to our couples and what
+            makes them unique, and we take the time to create powerful films that
+            move and showcase them and their unique love story.
           </p>
-          <p>
-            Your day will have it all. Fleeting moments of anticipation, of joy, of sheer breathlessness...<br />
-            We want those memories to grow with you and continue telling that powerful story for generations.
+          <p class="mx-auto my-2">
+            Your day will have it all. Fleeting moments of anticipation, of joy,
+            of sheer breathlessness...
+            <br />
+            We want those memories to grow with you and continue telling that
+            powerful story for generations.
           </p>
         </div>
       </div>
 
       <!-- Say Hello Button -->
-      <div class="row justify-content-center p-4" id="index-hello">
-        <button type="button" class="btn btn-outline-primary btn-lg">Say Hello</button>
+      <div class="row justify-content-center p-4">
+        <a href="/contact" class="btn btn-outline-primary btn-lg">Say Hello</a>
+      </div>
+
+      <!-- Featured Films -->
+      <div class="featured-films">
+        <h2 class="align-center">
+          <em>Featured Films</em>
+        </h2>
+        <div class="row my-5">
+          <div class="col-12 col-md-4 my-auto">
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/RachaelMichael_cover.jpg"
+              alt="film1"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/cassandra-anthony_square.jpg"
+              alt="film2"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+          </div>
+          <div class="col-12 col-md-4 my-auto">
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/mirandajeremiah-cover.jpg"
+              alt="film3"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/bianca-dylan_square.jpg"
+              alt="film4"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/jessica-peter_square.jpg"
+              alt="film5"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+          </div>
+          <div class="col-12 col-md-4 my-auto">
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/miriam-nathan_square.jpg"
+              alt="film6"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+            <img
+              src="https://storage.googleapis.com/austin-and-emily-website/courtney-luke_square.jpg"
+              alt="film7"
+              class="flex-img my-3 hover-border"
+              data-aos="fade-up"
+            />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- MEET THE FILMMAKERS -->
+      <div class="row my-2 padded">
+        <div class="col col-6 my-auto align-right">
+          <Link to="/about">
+            <h3>Meet the filmmakers //</h3>
+          </Link>
+        </div>
+        <div class="col col-6 align-left">
+          <p>
+            <em>
+              We're Austin &amp; Emily, a wedding film duo based in Seattle,
+              Washington.
+            </em>
+          </p>
+          <p>
+            <em>
+              Built on the philosophy that ordinary, fleeting moments can tell
+              beautiful and unique stories.
+            </em>
+          </p>
+          <p>
+            <em>
+              Our approach to filmmaking is authentic, but artistic: we strive to
+              paint emotion in every frame.
+            </em>
+          </p>
+        </div>
       </div>
     </main>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="js/bootstrap js/bootstrap.min.js"></script>
   </body>
+
+  <script>
+    AOS.init();
+  </script>
 </html>

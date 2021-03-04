@@ -1,0 +1,127 @@
+@import url("https://use.typekit.net/zox5evz.css");
+
+body { background: linear-gradient(#BEB0A2, #DED1CA); }
+
+/* nav { background-color: #DED1CA; } */
+
+.flex-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: questa-grande, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: calluna-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 29px;
+  letter-spacing: .15em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: calluna-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.21em;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  color: #995738;
+}
+
+p {
+  font-family: questa-grande, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  color: hsla(0, 0%, 0%, 0.6);
+}
+
+.asterisk {
+  font-size: 12px;
+  text-align: left;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+.navbar-nav, h2 { color: #995738; }
+
+.btn-outline-primary {
+  font-family: bebas-neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
+  text-transform: uppercase;
+  color: #C25638;
+  border-color: #C25638;
+  margin: 3rem 0 3rem;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #C25638;
+  background-color: #C25638;
+}
+
+.btn {
+  border-radius: 0px;
+  padding: 1rem 2rem;
+  border: 2px solid;
+}
+
+.overlay-text {
+  display: block;
+  padding-top: 8rem;
+}
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+.padded { padding: 3rem 1rem 3rem; }
+
+a { color: #fff; }
+a:hover { color: #995738; }
+
+.white-text { color: #fff; }
+
+.hover-border:hover {
+  border: 5px solid;
+  border-color: #fff;
+}
+
+.banner-video {
+  height: 400px;
+}
+
+.video-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (min-width: 768px) {
+  .banner-video, .video-box {
+    width: 100%;
+    height: auto;
+  }
+}
