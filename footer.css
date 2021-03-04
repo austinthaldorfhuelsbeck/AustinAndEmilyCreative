@@ -37,5 +37,12 @@ footer {
 .pad-top { padding-top: 10rem; }
 
 .fill-img {
-  width: 150%;
+  height: 400px;
+}
+
+@media all and (min-width: 768px) {
+  .fill-img {
+    width: 150%;
+    height: auto;
+  }
 }

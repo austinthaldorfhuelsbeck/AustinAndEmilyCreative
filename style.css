@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/zox5evz.css");
 
-body { background: linear-gradient(#BEB0A2, #DED1CA); }
+body { background: linear-gradient(#BEB0A2, #eee0d9); }
 
 /* nav { background-color: #DED1CA; } */
 
@@ -13,6 +13,11 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+/* --- Drop Shadow --- */
+main img {
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
 }
 
 .flex-img {
@@ -130,6 +135,11 @@ a:hover { color: #995738; }
   justify-content: center;
 }
 
+.inset-image {
+  width: 100%;
+  object-fit: contain;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -140,5 +150,11 @@ a:hover { color: #995738; }
   .banner-video, .video-box {
     width: 100%;
     height: auto;
+  }
+
+  .inset-image {
+    width: 70%;
+    border-radius: 1em;
+    margin: 0 auto;
   }
 }
