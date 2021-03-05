@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/zox5evz.css");
 
-body { background: linear-gradient(#BEB0A2, #eee0d9); }
+body {
+  background-color: #BEB0A2;
+  background: linear-gradient(#BEB0A2, #eee0d9);
+}
 
 /* nav { background-color: #DED1CA; } */
 
@@ -117,6 +120,7 @@ p {
 .padded { padding: 3rem 1rem 3rem; }
 
 a { color: #fff; }
+.dark-social { color:hsla(0, 0%, 0%, 0.6); }
 a:hover { color: #995738; }
 
 .white-text { color: #fff; }

@@ -38,7 +38,9 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+node_modules/classlist-polyfill
+node_modules/lodash.debounce
+node_modules/lodash.throttle
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -82,7 +84,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -114,3 +115,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.vercel
