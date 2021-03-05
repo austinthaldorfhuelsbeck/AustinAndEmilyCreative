@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/zox5evz.css");
 
-body { background: linear-gradient(#BEB0A2, #eee0d9); }
+body {
+  background-color: #BEB0A2;
+  background: linear-gradient(#BEB0A2, #eee0d9);
+}
 
 /* nav { background-color: #DED1CA; } */
 
