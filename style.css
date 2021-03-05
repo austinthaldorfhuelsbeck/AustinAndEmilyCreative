@@ -142,6 +142,7 @@ a:hover { color: #995738; }
 .inset-image {
   width: 100%;
   object-fit: contain;
+  box-shadow: none;
 }
 
 .social-links {
