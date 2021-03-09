@@ -62,12 +62,12 @@ h3 {
 
 p {
   font-family: questa-grande, serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 17px;
   letter-spacing: 0.02em;
   line-height: 1.5em;
-  color: hsla(0, 0%, 0%, 0.6);
+  color: hsla(0, 0%, 0%, 0.8);
 }
 
 .asterisk {
